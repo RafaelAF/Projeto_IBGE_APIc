@@ -1,24 +1,21 @@
-import logo from './logo.svg';
+
 import './App.css';
 
+import Macrorregiao from './ComponentsIBGE/Macrorregioes';
+
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ul className="App">
+      <h1>Consumo API IBGE</h1>
+      <div className='container-fluid aplicacao'>
+        <Macrorregiao />
+        <div>
+          teste
+        </div>
+      </div>
+    </ul>
+    
   );
 }
 
